@@ -6,6 +6,7 @@ node {
     def buildInfo
 
     stage('Clone sources') {
+        echo "cloning job repository"
         git url: 'https://github.com/jfrogdev/project-examples.git'
     }
 
